@@ -353,6 +353,38 @@ header .container {
 }
 
 /*------------------------------Hero---------------------------*/
+.hero {
+    padding: 200px 0 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+    background-color: var(--hero-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hero__title {
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--main-title-color);
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        margin: 0 auto;
+        margin-bottom: 30px;
+}
+
+.hero__btn {
+        margin: auto;      
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+         background: var(--btn-hover-color);
+}
 
 
 /*-----------------------Specifics--------------------------*/
@@ -592,7 +624,7 @@ header .container {
 .footer-join{
     margin-left: 70px;
 }
-
+he
 .join-lists {
     display: flex;
     justify-content: center;    
@@ -781,6 +813,7 @@ header .container {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--portfolio-description-color);
+    margin-bottom: 0;
 }
 
 .portfolio-text {

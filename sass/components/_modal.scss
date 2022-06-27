@@ -9,6 +9,9 @@
     transition: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+            transform: translate(-50%, -50%) scale(0.7);
+        }
 }
 
 .is-hidden {
@@ -34,11 +37,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-    .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0.7);
-    } 
-    
+   
     &__btn--close {
         position: absolute;
         top: 10px;
@@ -62,16 +61,16 @@
         }
     }
 
-
-    &__text {
+    &__text {        
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
+        
 
     &__label-text {
         font-weight: 400;
@@ -93,12 +92,13 @@
 
     &__input-wrap {
         position: relative;
+
     }
 
     &__icon {
         position: absolute;
         top: 50%;
-        left: 12px;
+        left: 15px;
         transform: translateY(-50%);
         fill: #212121;
         transition: fill;
@@ -178,12 +178,12 @@
         -webkit-appearance: none;
         -moz-appearance: none;
 
-        &:checked+&__check-text span {
+        &:checked+.modal__check-text span {
             background-color: var(--accent-color);
             border: none;
         }
 
-        &:checked+&__check-text &__icon-vector {
+        &:checked+.modal__check-text .modal__icon-vector {
             fill: #ffffff;
         }
     }

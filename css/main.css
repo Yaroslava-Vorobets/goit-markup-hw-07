@@ -20,7 +20,7 @@
   --portfolio-description-color: #212121;
   --portfolio-text-color: #757575;
   --portfolio-btn-color: #212121;
-  --portfolio-btn-bg-color: #F5F4FA;
+  --portfolio__btn-bg-color: #F5F4FA;
   --portfolio-btn-hover-color: #fff;
   --portfolio-btn-bg-hover-color: #2196F3;
   --footer-bg-color: #2F303A;
@@ -309,7 +309,7 @@ header .container {
 }
 
 .hero {
-  padding: 280px 0 200px;
+  padding: 200px 0 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
   background-color: var(--hero-color);
   background-repeat: no-repeat;
@@ -654,6 +654,9 @@ header .container {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop.is-hidden {
+  transform: translate(-50%, -50%) scale(0.7);
+}
 
 .is-hidden {
   visibility: hidden;
@@ -678,9 +681,6 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
 }
 .modal__btn--close {
   position: absolute;
@@ -709,7 +709,7 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .modal__label-text {
   font-weight: 400;
@@ -732,7 +732,7 @@ header .container {
 .modal__icon {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 15px;
   transform: translateY(-50%);
   fill: #212121;
   transition: fill;
@@ -801,11 +801,11 @@ header .container {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-.modal__check-box:checked + .modal__check-box__check-text span {
+.modal__check-box:checked + .modal__check-text span {
   background-color: var(--accent-color);
   border: none;
 }
-.modal__check-box:checked + .modal__check-box__check-text .modal__check-box__icon-vector {
+.modal__check-box:checked + .modal__check-text .modal__icon-vector {
   fill: #ffffff;
 }
 .modal__icon-vector {
