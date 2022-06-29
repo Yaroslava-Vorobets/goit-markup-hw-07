@@ -337,8 +337,14 @@ header .container {
   background: var(--btn-hover-color);
 }
 
+.specify {
+  display: flex;
+  display: wrap;
+  gap: 30px;
+}
+
 .specify__list {
-  width: 270px;
+  width: ca;
 }
 
 .specify__list:not(:first-child) {
@@ -754,7 +760,7 @@ header .container {
 .modal__form-input:focus {
   border-color: var(--accent-color);
 }
-.modal__form-input:focus + .modal__form-input__icon, .modal__form-input:not(:placeholder-shown) + .modal__form-input__icon {
+.modal__form-input:focus + .modal__icon, .modal__form-input:not(:placeholder-shown) + .modal__icon {
   fill: #2196F3;
 }
 .modal__form-message {

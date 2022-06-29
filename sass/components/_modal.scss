@@ -122,8 +122,8 @@
             border-color: var(--accent-color);
         }
 
-        &:focus+&__icon,
-        &:not(:placeholder-shown)+&__icon {
+        &:focus + .modal__icon,
+        &:not(:placeholder-shown) + .modal__icon {
             fill: #2196F3;
         }
 
